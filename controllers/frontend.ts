@@ -23,7 +23,7 @@ class Frontend {
     @ActionMiddleware(App.authenticate)
     goToAuthentication(context: Context): void {
         // once you get here, the user will be successfully authenticated
-        context.response.redirect(K.getActionRoute(Root, "onlyForUsers"));
+        context.response.redirect(K.getActionRoute(Frontend, "onlyForUsers"));
     }
 
     @Get("/authorized")

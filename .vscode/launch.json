@@ -15,7 +15,11 @@
                 "--nolazy"
             ],
             "env": {
-                "NODE_ENV": "development"
+                "NODE_ENV": "development",
+                "SQLUSER" : "sa",
+                "SQLPASSWORD": "Password11",
+                "SQLSERVER": "localhost",
+                "SQLDB": "PhoenixEnglish"
             },
             "externalConsole": false,
             "sourceMaps": true,
