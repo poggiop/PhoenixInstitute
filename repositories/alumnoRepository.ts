@@ -9,6 +9,7 @@ import { TYPES } from "./../interfaces/types";
 @injectable()
 export class AlumnoRepository extends RepositoryBase implements RepoInterface.AlumnoInterfaceRepository {
     
+    
    async getAll(): Promise<Model.Alumno[]>{
        let output= new Array<Model.Alumno>();
        let alumno = new Model.Alumno();
